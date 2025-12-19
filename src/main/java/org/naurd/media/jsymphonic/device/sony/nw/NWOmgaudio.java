@@ -177,9 +177,9 @@ public class NWOmgaudio extends NWGeneric{
 
             //// Create the file name and his path
             // First, get title information
-            artist = titleToExport.getArtist().replace("/","-").replace("?"," ");
-            album = titleToExport.getAlbum().replace("/","-").replace("?"," ");
-            titleName = titleToExport.getTitle().replace("/","-").replace("?"," ");
+            artist = titleToExport.getArtist().replace("/","-").replace("?"," ").replace(":","꞉").replace("\"", "“");
+            album = titleToExport.getAlbum().replace("/","-").replace("?"," ").replace(":","꞉").replace("\"", "“");
+            titleName = titleToExport.getTitle().replace("/","-").replace("?"," ").replace(":","꞉").replace("\"", "“");
             trackNumber = titleToExport.getTitleNumber();
 
             // Build directory to copy name (artist)
